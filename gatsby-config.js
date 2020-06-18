@@ -8,7 +8,6 @@ module.exports = {
     siteLanguage: `ro`,
     siteImage: `/banner.jpg`,
     author: `Tiberiu Tofan`,
-    basePath,
   },
   plugins: [
     `gatsby-plugin-emotion`,
