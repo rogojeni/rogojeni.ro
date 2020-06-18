@@ -1,21 +1,9 @@
 import React, { useState } from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import "../styles/layout.css"
 import logo from "../images/banner.png"
 
 export default function Layout({ children }) {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
-
   const [open, toggleMenu] = useState(false)
 
   return (
@@ -40,9 +28,6 @@ export default function Layout({ children }) {
           </Link>
           <Link className={`nav-item ${open ? "fade" : ""}`} to={`/gallery/`}>
             Galerie Media
-          </Link>
-          <Link className={`nav-item ${open ? "fade" : ""}`} to={`/coming-soon/`}>
-            Proiecte
           </Link>
           <Link className={`nav-item ${open ? "fade" : ""}`} to={`/contact/`}>
             Contact

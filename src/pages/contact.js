@@ -7,6 +7,7 @@ export default function Contact({ data }) {
   return (
     <Layout>
       <h1>{data.site.siteMetadata.title}</h1>
+      <p>E-mail: <a href="mailto:contact@rogojeni.ro">contact@rogojeni.ro</a></p>
       <div className="iframe-container">
         <iframe
           className="responsive-iframe"

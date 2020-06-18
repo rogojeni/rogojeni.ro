@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    title: `Alianta Rogojeni`,
     siteTitle: `rogojeni`,
     siteTitleAlt: `rogojeni`,
     siteHeadline: `Alianta Rogojeni`,

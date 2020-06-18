@@ -1,7 +1,15 @@
 import Typography from "typography"
-import fairyGateTheme from "typography-theme-kirkham"
+import kirkhamTheme from "typography-theme-kirkham"
 
-const typography = new Typography(fairyGateTheme)
+kirkhamTheme.overrideThemeStyles = () => ({
+  'a': {
+    color: `white`,
+  },
+  'h1': {
+    color: `white`
+  }
+})
+const typography = new Typography(kirkhamTheme)
 
 export const { scale, rhythm, options } = typography
 export default typography

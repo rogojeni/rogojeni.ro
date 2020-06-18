@@ -6,9 +6,18 @@ pallete {
     color5: #236602;
 }
 
+body {
+    background-color: #595F72;
+    color: white;
+}
+
+.h1 {
+    color: white !important;
+}
+
 nav {
     height: 6vh;
-    background: #202C39;
+    background: #011936;
 }
 
 .logo {
@@ -39,32 +48,29 @@ nav {
     text-decoration: none;
     font-variant: petite-caps;
     display: inline-flex;
+    position: relative;
 }
 
 .nav-links .nav-item:hover {
-    color: #0EB1D2;
+    color: #8dc73f;
     transition: .9s;
 }
 
-.nav-links .nav-item:after {
-    content: '';
-    position: absolute;
-    left: 50%;
+.nav-links .nav-item::after {
     bottom: 0;
-    transform: translateX(-50%) scaleX(0);
-    -webkit-transform: translateX(-50%) scaleX(0);
-    transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
-    width: 100%;
+    content: "";
+    display: block;
     height: 2px;
-    background-color: #0EB1D2;
-    transition: transform 250ms;
-    -webkit-transition: transform 250ms;
+    left: 50%;
+    position: absolute;
+    background: #8dc73f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
 .nav-links .nav-item:hover:after {
-    transform: translateX(-50%) scaleX(1);
-    -webkit-transform: translateX(-50%) scaleX(1);
+    width: 100%;
+    left: 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -90,7 +96,7 @@ nav {
 
     .nav-links {
         position: fixed;
-        background: #202C39;
+        background: #011936;
         height: 50vh;
         width: 100%;
         padding-top: 2vh;
