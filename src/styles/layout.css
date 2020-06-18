@@ -91,8 +91,10 @@ nav {
     .nav-links {
         position: fixed;
         background: #202C39;
-        height: 95vh;
+        height: 50vh;
         width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 20%;
         flex-direction: column;
         clip-path: circle(0px at 50% -10%);
         -webkit-clip-path: circle(0px at 50% -10%);
@@ -100,8 +102,8 @@ nav {
     }
 
     .nav-links.open {
-        clip-path: circle(100vh at 50% -10%);
-        -webkit-clip-path: circle(100vh at 50% -10%);
+        clip-path: circle(50vh at 50% -10%);
+        -webkit-clip-path: circle(50vh at 50% -10%);
     }
 
     .nav-links a {
