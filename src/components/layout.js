@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import "../styles/layout.css"
-import banner from "../images/banner.png"
+import logo from "../images/banner.png"
 
 export default function Layout({ children }) {
   const data = useStaticQuery(
@@ -21,11 +21,11 @@ export default function Layout({ children }) {
   return (
     <div>
       <nav>
-        {/*<div className="logo">*/}
-        {/*  <Link to={`/`}>*/}
-        {/*    <img src={banner} alt="Logo"/>*/}
-        {/*  </Link>*/}
-        {/*</div>*/}
+        <div className="logo">
+          <Link to={`/`}>
+            <img src={logo} alt="Logo"/>
+          </Link>
+        </div>
         <div className="hamburger" onClick={() => toggleMenu(!open)}>
           <div className="line"/>
           <div className="line"/>

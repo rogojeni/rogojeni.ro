@@ -7,19 +7,20 @@ pallete {
 }
 
 nav {
-    height: 5vh;
+    height: 6vh;
     background: #3e363f;
 }
 
 .logo {
+    display: flex;
+    float: left;
     overflow: hidden;
 }
 
 .logo img {
-    height: 5vh;
+    height: 6vh;
     width: auto;
     padding-left: 3px;
-    display: flex;
     flex-wrap: wrap;
 }
 
