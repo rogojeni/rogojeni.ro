@@ -38,7 +38,7 @@ export default function Layout({ children }) {
           <Link className={`nav-item ${open ? "fade" : ""}`} to={`/about/`}>
             Despre noi
           </Link>
-          <Link className={`nav-item ${open ? "fade" : ""}`} to={`/coming-soon/`}>
+          <Link className={`nav-item ${open ? "fade" : ""}`} to={`/gallery/`}>
             Galerie Media
           </Link>
           <Link className={`nav-item ${open ? "fade" : ""}`} to={`/coming-soon/`}>

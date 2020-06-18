@@ -82,9 +82,9 @@ nav {
     .hamburger {
         position: absolute;
         cursor: pointer;
-        right: 5%;
+        right: 2%;
         top: 50%;
-        transform: translate(-5%, -50%);
+        transform: translate(-2%, -50%);
         z-index: 2;
     }
 
