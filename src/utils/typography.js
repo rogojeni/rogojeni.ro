@@ -1,15 +1,16 @@
 import Typography from "typography"
-import kirkhamTheme from "typography-theme-kirkham"
+import theme from "typography-theme-elk-glen"
 
-kirkhamTheme.overrideThemeStyles = () => ({
-  'a': {
+theme.overrideThemeStyles = () => ({
+  "a": {
     color: `white`,
+    textShadow: `none`
   },
-  'h1': {
+  "h1": {
     color: `white`
   }
 })
-const typography = new Typography(kirkhamTheme)
+const typography = new Typography(theme)
 
 export const { scale, rhythm, options } = typography
 export default typography

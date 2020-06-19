@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Alianta Rogojeni`,
+    title: `Alianța Rogojeni`,
     siteTitle: `rogojeni`,
     siteTitleAlt: `rogojeni`,
-    siteHeadline: `Alianta Rogojeni`,
+    siteHeadline: `Alianța Rogojeni`,
     siteUrl: `https://rogojeni.ro`,
     siteDescription: `Home Page for Rogojeni Alliance`,
     siteLanguage: `ro`,

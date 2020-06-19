@@ -1,23 +1,12 @@
-pallete {
-    color1: #3e363f;
-    color2: #8ea4d2;
-    color3: #8dc73f;
-    color4: #339300;
-    color5: #236602;
-}
-
 body {
     background-color: #595F72;
     color: white;
 }
 
-.h1 {
-    color: white !important;
-}
-
 nav {
     height: 6vh;
     background: #011936;
+    min-height: 40px;
 }
 
 .logo {
@@ -26,8 +15,14 @@ nav {
     overflow: hidden;
 }
 
+.logo a {
+    background-image: none;
+}
+
 .logo img {
-    height: 6vh;
+    height: 5vh;
+    margin-top: 4%;
+    min-height: 33px;
     width: auto;
     padding-left: 3px;
     flex-wrap: wrap;
@@ -45,7 +40,7 @@ nav {
 }
 
 .nav-links .nav-item {
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
     font-variant: petite-caps;
     display: inline-flex;
