@@ -16,10 +16,10 @@ export default function Home() {
           orice urmă de bună creștere va fi taxată, văzută fiind ca o slăbiciune de care restul trebuie să
           profite neapărat, ca o haită de lupi simțind miros de sânge. Și a trebuit să port întreaga mea
           existență masca indiferenței pentru a-mi face loc printre gladiatorii betoanelor, mercenari aduși
-          din toate colțurile țării pentru a face un ban. O las în barieră de câte ori plec acasă. Lumea mea
+          din toate colțurile țării pentru a face un ban. O las în Barieră de câte ori plec acasă. Lumea mea
           nu mă știe decât așa cum sunt eu și nu risc să plec mascat acolo unde toată lumea e așa cum
           trebuie să fie: deschisă, sinceră și bună. Aici, în țara mea, primesc bună ziua de la toată lumea cu
-          care mă întâlnesc. Aici sunt a cuiva, faptele mele fiindu-le atribuite și înaintașilor mei, cinstindu-
+          care mă întâlnesc. Aici sunt al cuiva, faptele mele fiindu-le atribuite și înaintașilor mei, cinstindu-
           le memoria. De aceea eu vin aici acasă, nu vin aici la țară”.
         </p>
         <p style={{ fontStyle: `italic` }}>(Cornel Teodoru, fragment din volumul Gânduri de om, Editura InfoRapArt,
