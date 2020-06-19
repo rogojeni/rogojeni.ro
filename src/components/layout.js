@@ -14,10 +14,9 @@ export default function Layout({ children }) {
             <img src={logo} alt="Logo"/>
           </Link>
         </div>
-        <div className="hamburger" onClick={() => toggleMenu(!open)}>
-          <div className="line"/>
-          <div className="line"/>
-          <div className="line"/>
+        <div className={`hamburger ${open ? "open" : ""}`}
+             onClick={() => toggleMenu(!open)}>
+          <div/>
         </div>
         <ul className={`nav-links ${open ? "open" : ""}`}>
           <Link className={`nav-item ${open ? "fade" : ""}`} to={`/home`}>

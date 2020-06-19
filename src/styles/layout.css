@@ -81,6 +81,16 @@ nav {
         margin: 5px;
     }
 
+    .line.first {
+        width: 20px;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+
+    .line:hover {
+        background-color: #8dc73f;
+    }
+
     nav {
         position: relative;
     }
@@ -88,10 +98,55 @@ nav {
     .hamburger {
         position: absolute;
         cursor: pointer;
-        right: 2%;
-        top: 50%;
-        transform: translate(-2%, -50%);
+        right: 0;
+        /*transform: translate(-15%, 10%);*/
         z-index: 2;
+        margin: 5px;
+        width: 30px;
+    }
+
+    .hamburger:after,
+    .hamburger:before,
+    .hamburger div {
+        background-color: white;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 5px;
+        margin: 7px 0;
+        transition: all .2s ease-in-out;
+    }
+    .hamburger:before {
+        width: 25px;
+        margin-left: 4px;
+    }
+
+    /*hover*/
+    .hamburger:hover:before {
+        background-color: #8dc73f;
+        transition: all .5s ease-in-out;
+        margin-left: 0;
+    }
+    .hamburger:hover:after {
+        background-color: #8dc73f;
+        transition: all .5s ease-in-out;
+    }
+    .hamburger:hover div {
+        background-color: #8dc73f;
+        transition: all .5s ease-in-out;
+    }
+
+    /*open*/
+    .hamburger.open:before{
+        transform: translateY(12px) rotate(135deg);
+        margin-left: 0;
+        width: 30px;
+    }
+    .hamburger.open:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+    .hamburger.open div {
+        transform: scale(0);
     }
 
     .nav-links {
