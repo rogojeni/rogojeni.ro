@@ -7,7 +7,7 @@ export default function Index() {
     <Layout>
       <div className="vimeo-wrapper">
         <div className="overlay"/>
-        <iframe tile="alianta rogojeni p" name="presentation-video" allow="autoplay; fullscreen"
+        <iframe title="alianta rogojeni" name="presentation-video" allow="autoplay; fullscreen"
                 src="https://player.vimeo.com/video/430445552?background=1&autoplay=1&loop=1&byline=0&title=0"
                 frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
       </div>

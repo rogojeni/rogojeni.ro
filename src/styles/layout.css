@@ -41,6 +41,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
+    z-index: 10;
 }
 
 .nav-links .nav-item {
@@ -74,23 +75,6 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
-    .line {
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 5px;
-    }
-
-    .line.first {
-        width: 20px;
-        margin-left: 15px;
-        margin-top: 5px;
-    }
-
-    .line:hover {
-        background-color: #8dc73f;
-    }
-
     nav {
         position: relative;
     }
@@ -99,8 +83,7 @@ nav {
         position: absolute;
         cursor: pointer;
         right: 0;
-        /*transform: translate(-15%, 10%);*/
-        z-index: 2;
+        z-index: 5;
         margin: 5px;
         width: 30px;
     }
@@ -160,6 +143,7 @@ nav {
         clip-path: circle(0px at 50% -10%);
         -webkit-clip-path: circle(0px at 50% -10%);
         transition: all 1s ease-out;
+        z-index: 4;
     }
 
     .nav-links.open {
