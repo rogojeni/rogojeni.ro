@@ -13,7 +13,7 @@ export default function Index() {
                         frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
             </div>
             <div className="tagline">
-                <div>Pentru</div>
+                <div className="static">Pentru</div>
                 <div id="flip">
                     <div>
                         <div>Oameni</div>
@@ -25,7 +25,7 @@ export default function Index() {
                         <div>Viitor</div>
                     </div>
                 </div>
-                <div>Care Contează.</div>
+                <div className="static">Care Contează.</div>
             </div>
         </Layout>
     )

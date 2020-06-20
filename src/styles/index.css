@@ -6,7 +6,7 @@
     z-index: 5;
     vertical-align: baseline;
     margin: 5vw;
-    font-size: 36px;
+    font-size: 34px;
     text-transform: uppercase;
     transform: translateY(-50%);
     text-align: left;
@@ -49,5 +49,27 @@
     71% {margin-top:0px;}
     99.99% {margin-top:0px;}
     100% {margin-top:-270px;}
+}
+
+@media screen and (max-width: 500px) {
+    .static {
+        height: 50px;
+        padding-top: 10px;
+    }
+
+    #flip div:first-child {
+        padding-top: 10px;
+    }
+
+    @keyframes show {
+        0% {margin-top:-240px;}
+        5% {margin-top:-160px;}
+        33% {margin-top:-160px;}
+        38% {margin-top:-80px;}
+        66% {margin-top:-80px;}
+        71% {margin-top:-5px;}
+        99.99% {margin-top:-5px;}
+        100% {margin-top:-240px;}
+    }
 }
 
