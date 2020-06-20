@@ -33,7 +33,7 @@ export default function Layout({ children }) {
           </Link>
         </ul>
       </nav>
-      <div style={{ margin: `3rem auto`, maxWidth: 800, padding: `0 1rem` }}>
+      <div style={{ maxWidth: 800 }}>
         {children}
       </div>
     </div>
