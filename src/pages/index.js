@@ -14,7 +14,7 @@ export default function Index() {
                         frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
             </div>
             <div className="tagline">
-                <UnderliningLink className="button">Contribuie</UnderliningLink>
+                <UnderliningLink className="static" to={`/coming-soon`}>Contribuie</UnderliningLink>
                 <div className="static">Pentru</div>
                 <div id="flip">
                     <div>

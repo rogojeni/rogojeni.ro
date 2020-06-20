@@ -12,7 +12,7 @@
     text-align: left;
 }
 
-.button {
+.tagline > a {
     background-color: rgba(1, 25, 54, 0.5);
 }
 
@@ -26,14 +26,11 @@
     height: 45px;
     margin-bottom: 45px;
     display: inline-block;
+    background: rgba(141, 199, 63, 0.5);
 }
 
 #flip div:first-child {
     animation: show 5s linear infinite;
-}
-
-#flip div div {
-    background: rgba(141, 199, 63, 0.5);
 }
 
 #flip div:first-child div {
@@ -58,7 +55,7 @@
 @media screen and (max-width: 500px) {
     .static {
         height: 50px;
-        padding-top: 10px;
+        padding-top: 15px;
     }
 
     #flip div:first-child {
