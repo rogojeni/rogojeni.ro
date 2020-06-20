@@ -1,0 +1,33 @@
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-variant: petite-caps;
+    display: inline-flex;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: #8dc73f;
+    transition: .9s;
+}
+
+.nav-item::after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #8dc73f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-item.fade {
+    opacity: 1;
+}

@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import "../styles/video.css"
 import "../styles/index.css"
+import UnderliningLink from "../components/underlining-link";
 
 export default function Index() {
     return (
@@ -13,6 +14,7 @@ export default function Index() {
                         frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
             </div>
             <div className="tagline">
+                <UnderliningLink className="button">Contribuie</UnderliningLink>
                 <div className="static">Pentru</div>
                 <div id="flip">
                     <div>

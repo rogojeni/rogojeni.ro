@@ -6,7 +6,7 @@ body {
 nav {
     height: 6vh;
     background: #011936;
-    min-height: 40px;
+    min-height: 50px;
 }
 
 .logo {
@@ -22,7 +22,7 @@ nav {
 .logo img {
     height: 5vh;
     margin-top: 4%;
-    min-height: 33px;
+    min-height: 43px;
     width: auto;
     padding-left: 3px;
     flex-wrap: wrap;
@@ -37,36 +37,6 @@ nav {
     align-items: center;
     margin-left: auto;
     z-index: 10;
-}
-
-.nav-links .nav-item {
-    color: white;
-    text-decoration: none;
-    font-variant: petite-caps;
-    display: inline-flex;
-    position: relative;
-}
-
-.nav-links .nav-item:hover {
-    color: #8dc73f;
-    transition: .9s;
-}
-
-.nav-links .nav-item::after {
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #8dc73f;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.nav-links .nav-item:hover:after {
-    width: 100%;
-    left: 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -173,9 +143,5 @@ nav {
 
     .nav-links a:nth-child(6) {
         transition: all 0.5s ease 1s;
-    }
-
-    .nav-item.fade {
-        opacity: 1;
     }
 }

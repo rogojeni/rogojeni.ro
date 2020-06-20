@@ -12,6 +12,10 @@
     text-align: left;
 }
 
+.button {
+    background-color: rgba(1, 25, 54, 0.5);
+}
+
 #flip {
     height: 50px;
     overflow: hidden;
