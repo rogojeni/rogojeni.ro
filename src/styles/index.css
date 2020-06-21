@@ -1,11 +1,11 @@
 .tagline {
-    position: fixed;
+    position: absolute;
     top: 50vh;
     width: 100%;
     display: block;
     z-index: 5;
     vertical-align: baseline;
-    margin: 5vw;
+    margin-left: 5vw;
     font-size: 34px;
     text-transform: uppercase;
     transform: translateY(-50%);
@@ -13,6 +13,8 @@
 }
 
 .tagline > a {
+    padding-left: 12px;
+    padding-right: 12px;
     background-color: rgba(1, 25, 54, 0.5);
 }
 
@@ -42,14 +44,30 @@
 }
 
 @keyframes show {
-    0% {margin-top:-270px;}
-    5% {margin-top:-180px;}
-    33% {margin-top:-180px;}
-    38% {margin-top:-90px;}
-    66% {margin-top:-90px;}
-    71% {margin-top:0px;}
-    99.99% {margin-top:0px;}
-    100% {margin-top:-270px;}
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    38% {
+        margin-top: -90px;
+    }
+    66% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -63,14 +81,30 @@
     }
 
     @keyframes show {
-        0% {margin-top:-240px;}
-        5% {margin-top:-160px;}
-        33% {margin-top:-160px;}
-        38% {margin-top:-80px;}
-        66% {margin-top:-80px;}
-        71% {margin-top:-5px;}
-        99.99% {margin-top:-5px;}
-        100% {margin-top:-240px;}
+        0% {
+            margin-top: -240px;
+        }
+        5% {
+            margin-top: -160px;
+        }
+        33% {
+            margin-top: -160px;
+        }
+        38% {
+            margin-top: -80px;
+        }
+        66% {
+            margin-top: -80px;
+        }
+        71% {
+            margin-top: -5px;
+        }
+        99.99% {
+            margin-top: -5px;
+        }
+        100% {
+            margin-top: -240px;
+        }
     }
 }
 

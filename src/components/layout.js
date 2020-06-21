@@ -7,6 +7,9 @@ import UnderliningLink from "./underlining-link";
 export default function Layout({children}) {
     const [open, toggleMenu] = useState(false)
 
+    const keyPressed = () => {
+    }
+
     return (
         <div>
             <nav>
@@ -15,8 +18,8 @@ export default function Layout({children}) {
                         <img src={logo} alt="Logo"/>
                     </Link>
                 </div>
-                <div className={`hamburger ${open ? "open" : ""}`}
-                     onClick={() => toggleMenu(!open)}>
+                <div role="button" tabIndex={0} lassName={`hamburger ${open ? "open" : ""}`}
+                     onClick={() => toggleMenu(!open)} onKeyPress={keyPressed}>
                     <div/>
                 </div>
                 <ul className={`nav-links ${open ? "open" : ""}`}>
@@ -34,9 +37,7 @@ export default function Layout({children}) {
                     </UnderliningLink>
                 </ul>
             </nav>
-            <div style={{ margin: `3rem auto`, maxWidth: 800, padding: `0 1rem` }}>
-                {children}
-            </div>
+            {children}
         </div>
     )
 }

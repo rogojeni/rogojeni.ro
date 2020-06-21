@@ -1,18 +1,21 @@
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 import React from 'react'
 
 import Gallery from '@browniebroke/gatsby-image-gallery'
 import '@browniebroke/gatsby-image-gallery/dist/style.css'
 import Layout from "../components/layout"
+import CenteredBody from "../components/centered-body";
 
-const MediaGallery = ({ data }) => {
-  const images = data.allFile.edges.map(({ node }) => node.childImageSharp)
-  // `images` is an array of objects with `thumb` and `full`
-  return (
-    <Layout>
-      <Gallery images={images} />
-    </Layout>
-  )
+const MediaGallery = ({data}) => {
+    const images = data.allFile.edges.map(({node}) => node.childImageSharp)
+    // `images` is an array of objects with `thumb` and `full`
+    return (
+        <Layout>
+            <CenteredBody>
+                <Gallery images={images}/>
+            </CenteredBody>
+        </Layout>
+    )
 }
 
 export const query = graphql`
