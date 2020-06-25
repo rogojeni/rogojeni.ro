@@ -7,6 +7,7 @@ nav {
     height: 6vh;
     background: #011936;
     min-height: 50px;
+    z-index: 10;
 }
 
 .logo {
@@ -36,7 +37,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-    z-index: 10;
+    /*z-index: 10;*/
 }
 
 @media screen and (max-width: 900px) {
@@ -48,7 +49,7 @@ nav {
         position: absolute;
         cursor: pointer;
         right: 0;
-        z-index: 5;
+        z-index: 11;
         margin: 5px;
         width: 30px;
     }
@@ -108,7 +109,7 @@ nav {
         clip-path: circle(0px at 50% -10%);
         -webkit-clip-path: circle(0px at 50% -10%);
         transition: all 1s ease-out;
-        z-index: 4;
+        /*z-index: 10;*/
     }
 
     .nav-links.open {
