@@ -18,7 +18,7 @@ export default function Layout({children}) {
                         <img src={logo} alt="Logo"/>
                     </Link>
                 </div>
-                <div role="button" tabIndex={0} lassName={`hamburger ${open ? "open" : ""}`}
+                <div role="button" tabIndex={0} className={`hamburger ${open ? "open" : ""}`}
                      onClick={() => toggleMenu(!open)} onKeyPress={keyPressed}>
                     <div/>
                 </div>
