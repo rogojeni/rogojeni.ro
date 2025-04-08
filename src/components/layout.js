@@ -26,14 +26,17 @@ export default function Layout({children}) {
                     <UnderliningLink className={`${open ? "fade" : ""}`} to={`/home`}>
                         Acasă
                     </UnderliningLink>
-                    <UnderliningLink className={`${open ? "fade" : ""}`} to={`/about/`}>
+                    <UnderliningLink className={`${open ? "fade" : ""}`} to={`/about`}>
                         Despre noi
                     </UnderliningLink>
-                    <UnderliningLink className={`${open ? "fade" : ""}`} to={`/gallery/`}>
+                    <UnderliningLink className={`${open ? "fade" : ""}`} to={`/gallery`}>
                         Galerie Media
                     </UnderliningLink>
-                    <UnderliningLink className={`${open ? "fade" : ""}`} to={`/contact/`}>
+                    <UnderliningLink className={`${open ? "fade" : ""}`} to={`/contact`}>
                         Contact
+                    </UnderliningLink>
+                    <UnderliningLink className={`${open ? "fade" : ""}`} to={`/contribuie`}>
+                        Contribuie
                     </UnderliningLink>
                 </ul>
             </nav>

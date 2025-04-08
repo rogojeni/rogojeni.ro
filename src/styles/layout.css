@@ -1,13 +1,14 @@
 body {
-    background-color: #595F72;
-    color: white;
+    background-color: #F7FDF5;
+    color: #2C3E2E;
 }
 
 nav {
     height: 6vh;
-    background: #011936;
-    min-height: 50px;
+    background: #FFFFFF;
+    min-height: 54px;
     z-index: 10;
+    border-bottom: 2px solid #5A9658;
 }
 
 .logo {
@@ -57,7 +58,7 @@ nav {
     .hamburger:after,
     .hamburger:before,
     .hamburger div {
-        background-color: white;
+        background-color: #5A9658;
         border-radius: 3px;
         content: '';
         display: block;
@@ -100,7 +101,7 @@ nav {
 
     .nav-links {
         position: fixed;
-        background: #011936;
+        background: #2C3E2E;
         height: 50vh;
         width: 100%;
         padding-top: 2vh;
