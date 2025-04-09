@@ -1,0 +1,26 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-icon {
+    margin-right: 8px;
+    margin-bottom: 0;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    align-self: center;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #000;
+}
