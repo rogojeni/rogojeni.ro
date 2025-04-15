@@ -11,6 +11,7 @@ module.exports = {
     author: `Tiberiu Tofan`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -21,8 +22,20 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `gallery`,
         path: `${__dirname}/src/images/gallery`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 70,
+          breakpoints: [750, 1366],
+          backgroundColor: `transparent`,
+        },
       },
     },
     {
@@ -39,5 +52,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-image`,
   ],
 }

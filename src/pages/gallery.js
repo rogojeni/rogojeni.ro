@@ -1,36 +1,53 @@
 import { graphql } from "gatsby"
 import React from "react"
-
-import Gallery from "@browniebroke/gatsby-image-gallery"
 import Layout from "../components/layout"
+import { Gallery, LocalGalleryAdapter } from "../components/gallery"
 
 const MediaGallery = ({ data }) => {
-  const images = data.allFile.edges.map(({ node }) => node.childImageSharp)
-  // `images` is an array of objects with `thumb` and `full`
+  const images = LocalGalleryAdapter.transformData(data);
+
   return (
-    <Layout>
-      <Gallery images={images} />
+    <Layout
+      title="Galerie Media"
+      description="Explorați colecția noastră de imagini din Rogojeni - Momente și locuri memorabile din comunitatea noastră"
+    >
+      <Gallery
+        images={images}
+        getThumbnail={LocalGalleryAdapter.getThumbnail}
+        getFullSizeImage={LocalGalleryAdapter.getFullSizeImage}
+      />
     </Layout>
-  )
-}
+  );
+};
 
 export const pageQuery = graphql`
   query ImagesForGallery {
-    allFile {
+    allFile(
+      filter: { extension: { regex: "/(jpg)|(jpeg)|(png)/" } }
+      sort: { name: ASC }
+    ) {
       edges {
         node {
           childImageSharp {
-            thumb: gatsbyImageData(
-              width: 270
-              height: 270
-              placeholder: BLURRED
+            gatsbyImageData(
+              width: 500
+              height: 500
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP]
+              transformOptions: { fit: COVER }
             )
-            full: gatsbyImageData(layout: FULL_WIDTH)
+            fullSize: gatsbyImageData(
+              quality: 75
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP]
+              layout: CONSTRAINED
+              transformOptions: { fit: CONTAIN }
+            )
           }
         }
       }
     }
   }
-`
+`;
 
-export default MediaGallery
+export default MediaGallery;

@@ -5,7 +5,10 @@ import CenteredBody from "../components/centered-body";
 
 export default function About({ data }) {
   return (
-    <Layout>
+    <Layout
+      title="Despre noi"
+      description="Aflați povestea Alianței Rogojeni și misiunea noastră de a păstra și promova tradițiile și cultura locală"
+    >
       <CenteredBody>
         <h1>De ce {data.site.siteMetadata.title}?</h1>
         <p>

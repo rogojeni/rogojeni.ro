@@ -19,6 +19,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.thumbnail-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .vimeo-wrapper .overlay {
@@ -29,5 +45,10 @@
     left: 0px;
     z-index: 2;
     background: rgba(0, 0, 0, 0.6);
-    opacity: 0.5;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.vimeo-wrapper .overlay.visible {
+    opacity: 1;
 }

@@ -6,7 +6,10 @@ import ButtonLink from "../components/button-link"
 
 export default function Contact({ data }) {
   return (
-    <Layout>
+    <Layout
+      title="Contribuie"
+      description="Susține proiectele Alianței Rogojeni prin donații sau redirecționarea a 3.5% din impozitul pe venit"
+    >
       <CenteredBody>
         <div>
           <h2>Susține Alianța</h2>

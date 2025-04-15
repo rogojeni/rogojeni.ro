@@ -1,25 +1,58 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import {Link} from "gatsby"
-import "../styles/layout.css"
 import logo from "../images/banner.png"
-import UnderliningLink from "./underlining-link";
+import "../styles/layout.css"
+import UnderliningLink from "./underlining-link"
+import SEO from "./seo"
 
-export default function Layout({children}) {
-    const [open, toggleMenu] = useState(false)
+export default function Layout({children, title, description, image}) {
+    const [open, setOpen] = useState(false)
 
-    const keyPressed = () => {
+    // Close menu when route changes
+    useEffect(() => {
+        setOpen(false)
+    }, [])
+
+    // Handle keyboard accessibility
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            setOpen(!open)
+        }
     }
+
+    // Close menu when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            if (open && !e.target.closest('.nav-links') && !e.target.closest('.hamburger')) {
+                setOpen(false)
+            }
+        }
+
+        document.addEventListener('click', handleClickOutside)
+        return () => document.removeEventListener('click', handleClickOutside)
+    }, [open])
 
     return (
         <div>
+            <SEO title={title} description={description} image={image} />
             <nav>
                 <div className="logo">
                     <Link to={`/`}>
-                        <img src={logo} alt="Logo"/>
+                        <img 
+                            src={logo}
+                            alt="Alianța Rogojeni Logo"
+                        />
                     </Link>
                 </div>
-                <div role="button" tabIndex={0} className={`hamburger ${open ? "open" : ""}`}
-                     onClick={() => toggleMenu(!open)} onKeyPress={keyPressed}>
+                <div 
+                    role="button" 
+                    tabIndex={0} 
+                    className={`hamburger ${open ? "open" : ""}`}
+                    onClick={() => setOpen(!open)} 
+                    onKeyPress={handleKeyPress}
+                    aria-label="Menu"
+                    aria-expanded={open}
+                >
                     <div/>
                 </div>
                 <ul className={`nav-links ${open ? "open" : ""}`}>
@@ -40,7 +73,7 @@ export default function Layout({children}) {
                     </UnderliningLink>
                 </ul>
             </nav>
-            {children}
+            <main>{children}</main>
         </div>
     )
 }

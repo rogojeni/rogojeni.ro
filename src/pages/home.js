@@ -1,10 +1,14 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import CenteredBody from "../components/centered-body";
 
-export default function Home() {
+export default function Home({ data }) {
     return (
-        <Layout>
+        <Layout 
+            title="Acasă"
+            description="Bun venit pe pagina Alianței Rogojeni - O comunitate care păstrează și promovează tradițiile și valorile satului Rogojeni"
+        >
             <CenteredBody>
                 <div className="article">
                     <h1>Spun acasă, deși ceilalți aud la țară</h1>
