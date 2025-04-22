@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[420],{7482:function(n,r,t){t.r(r),t.d(r,{default:function(){return e}});t(6540);var l=t(1950),u=t(9331);function e(){return(0,u.Y)(l.A,null,(0,u.Y)("h1",null,"În curând"))}}}]);
+//# sourceMappingURL=component---src-pages-coming-soon-js-3c9ae07de14a617717dc.js.map
