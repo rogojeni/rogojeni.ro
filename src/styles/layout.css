@@ -12,13 +12,14 @@ nav {
 }
 
 .logo {
-    display: flex;
     float: left;
-    overflow: hidden;
+    height: 100%;
 }
 
 .logo a {
-    background-image: none;
+    display: block;
+    height: 100%;
+    background: none;
 }
 
 .logo img {

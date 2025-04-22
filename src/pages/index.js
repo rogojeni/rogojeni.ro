@@ -1,18 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
-import "../styles/video.css"
 import "../styles/index.css"
-import UnderliningLink from "../components/underlining-link";
+import UnderliningLink from "../components/underlining-link"
+import BackgroundVideo from "../components/background-video"
 
 export default function Index() {
     return (
-        <Layout>
-            <div className="vimeo-wrapper">
-                <div className="overlay"/>
-                <iframe title="alianta rogojeni" name="presentation-video" allow="autoplay; fullscreen"
-                        src="https://player.vimeo.com/video/430445552?background=1&autoplay=1&loop=1&byline=0&title=0"
-                        webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
-            </div>
+        <Layout
+            title="Bine ați venit"
+            description="Alianța Rogojeni - O inițiativă comunitară pentru dezvoltarea și promovarea valorilor locale"
+        >
+            <BackgroundVideo />
             <div className="tagline">
                 <UnderliningLink className="static" to={`/contribuie`}>Contribuie</UnderliningLink>
                 <div className="static">pentru</div>
